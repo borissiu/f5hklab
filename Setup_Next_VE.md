@@ -11,8 +11,9 @@
 + import ovf, e.g. qm importovf 222 /root/f5/images/BigIP-Next/VE-Next/BIG-IP-Next-20.2.0-2.375.1+0.0.43.ovf local-lvm
 
 ### Add Cloudinit & NICs
-![alt text](image-2.png)
++ Credential, e.g. admin/admin, 192.168.100.22
 ![alt text](image-3.png)
++ E1000 for mgmt and Virtio for others
 ![alt text](image-5.png)
 
 ### Start Next-VE and then Remove Cloudinit
@@ -34,6 +35,7 @@
 ### Supplementary Info.
 + https://community.f5.com/kb/technicalarticles/create-f5-big-ip-next-instance-on-proxmox-virtual-environment/326446
 
+BIG-IP-Next-20.2.0-2.375.1+0.0.43
 + Ubuntu 22.04.4 TLS
 + 
 
