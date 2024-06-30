@@ -1,11 +1,12 @@
-### Setup Next-VE on Proxmox
+### Setup BigIP-VE on Proxmox
 1. Create a VM
 2. Import disk from qcow2 image
 3. Adjust VM hardware setting
-4. Supplementary Info.
+4. BigIP-VE initial setup
+5. Supplementary Info.
 
 ### 1. Create a VM
-+ Create a VM
++ Create a VM  
   ![alt text](image-26.png)
 
 ### 2. Import disk from qcow2 image
@@ -21,7 +22,18 @@
 + Update boot order  
   ![alt text](image-28.png)
 
-### 4. Supplementary Info.
+### 4. BigIP-VE initial setup
++ BigIP-VE initial setup via Proxmox console
++ logon as root/default
++ Disable mgmt-dhcp
+  + tmsh modify sys global-settings mgmt-dhcp disabled
++ Configure mgmt-ip, gateway
+  + tmsh create sys management-ip 192.168.100.190/24
+  + tmsh create sys management-route default gateway 192.168.100.1
++ Save config
+  + tmsh save sys config
+
+### 5. Supplementary Info.
 + How to deploy BIG-IP VE with Proxmox Virtual Environment
   https://my.f5.com/manage/s/article/K85183351
 
