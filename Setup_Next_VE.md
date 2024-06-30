@@ -40,6 +40,8 @@
   + Ubuntu 22.04.4 TLS  
   + ![alt text](image-7.png)
 
++ admin account was disable after running setup
+  
 + https://community.f5.com/kb/technicalarticles/create-f5-big-ip-next-instance-on-proxmox-virtual-environment/326446
 
 
