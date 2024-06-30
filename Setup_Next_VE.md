@@ -1,7 +1,7 @@
 ### Setup Next-VE on Proxmox
 1. Import **ovf**
-2. **Add Cloudinit** & NICs
-3. Start Next-VE and then **Remove Cloudinit**
+2. Add NICs & **Cloudinit Drive** 
+3. Start Next-VE and then **Remove Cloudinit Drive**
 4. Run setup script
 5. Manage by Central Manager
 6. Activate License
@@ -10,13 +10,13 @@
 + ssh to proxmox, e.g. ssh root@192.168.100.2 or ssh root@192.168.100.3
 + import ovf, e.g. qm importovf 222 /root/f5/images/BigIP-Next/VE-Next/BIG-IP-Next-20.2.0-2.375.1+0.0.43.ovf local-lvm
 
-### Add Cloudinit & NICs
-+ Credential, e.g. admin/admin, 192.168.100.22  
-![alt text](image-3.png)
+### Add NICs & Cloudinit Drive
 + E1000 for mgmt and Virtio for others  
 ![alt text](image-5.png)
++ Credential, e.g. admin/admin, 192.168.100.22  
+![alt text](image-3.png)
 
-### Start Next-VE and then Remove Cloudinit
+### Start Next-VE and then Remove Cloudinit Drive
 + Start Next-VE
 + Remove CloudInit Drive. Otherwise, CLI access may fail in next bootup.
 
