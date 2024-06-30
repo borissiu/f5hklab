@@ -28,10 +28,12 @@
 ![alt text](image-6.png)
 
 ### Manage by Central Manager
-+ Connect to CM, e.g. https://192.168.100.210
-+ 
++ Connect to CM, e.g. https://192.168.100.210  
+![alt text](image-8.png)
+![alt text](image-9.png)
 
 ### Activate License
+![alt text](image-10.png)
 
 ### Supplementary Info.
 + https://community.f5.com/kb/technicalarticles/create-f5-big-ip-next-instance-on-proxmox-virtual-environment/326446
