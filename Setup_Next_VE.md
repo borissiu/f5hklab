@@ -36,9 +36,11 @@
 ![alt text](image-10.png)
 
 ### Supplementary Info.
-+ https://community.f5.com/kb/technicalarticles/create-f5-big-ip-next-instance-on-proxmox-virtual-environment/326446
-
 + BIG-IP-Next-20.2.0-2.375.1+0.0.43
   + Ubuntu 22.04.4 TLS  
   + ![alt text](image-7.png)
+
++ https://community.f5.com/kb/technicalarticles/create-f5-big-ip-next-instance-on-proxmox-virtual-environment/326446
+
+
 
