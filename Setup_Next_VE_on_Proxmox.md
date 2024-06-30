@@ -48,7 +48,7 @@
 ### 7. Supplementary Info.
 + BIG-IP-Next-20.2.0-2.375.1+0.0.43
   + Ubuntu 22.04.4 TLS
-  + K8S version
+  + K8S version  
     ![alt text](image-7.png)
 
 + admin account was disable after running setup
