@@ -7,7 +7,8 @@
 
 ### 1. Create a VM
 + Create a VM  
-  ![alt text](image-26.png)
+  + e.g. Machine ID 190
+    ![alt text](image-26.png)
 
 ### 2. Import disk from qcow2 image
 + Import disk from qcow2 image
