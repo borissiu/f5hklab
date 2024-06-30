@@ -41,3 +41,6 @@
 ### 5. Supplementary Info.
 + Upgrade F5OS to 1.7.0
   ![alt text](image-13.png)
+
++ Postman Collection
+  https://clouddocs.f5.com/bigip-next/latest/_downloads/306e939fa3b8d36fdf0d8b7a9aaf6328/BIG-IP-Next-Postman-Collection-v20.2.0-4.15.61-0.0.3.zip
