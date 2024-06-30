@@ -6,8 +6,8 @@
 5. Supplementary Info.
 
 ### 1. Create a VM
-+ Create a VM  
-  + e.g. Machine ID 190
++ Create a VM
+  + e.g. Machine ID 190  
     ![alt text](image-26.png)
 
 ### 2. Import disk from qcow2 image
