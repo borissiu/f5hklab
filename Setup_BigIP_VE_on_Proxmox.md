@@ -28,7 +28,7 @@
   + Logon as root/default
   + Disable mgmt-dhcp
     + tmsh modify sys global-settings mgmt-dhcp disabled
-  + Configure mgmt-ip, gateway
+  + Configure mgmt-ip & gateway
     + tmsh create sys management-ip 192.168.100.190/24
     + tmsh create sys management-route default gateway 192.168.100.1
   + Save config
