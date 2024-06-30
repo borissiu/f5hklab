@@ -13,7 +13,7 @@
 ### Add NICs & Cloudinit Drive
 + E1000 for mgmt and Virtio for others  
 ![alt text](image-5.png)
-+ Credential, e.g. admin/admin, 192.168.100.22  
++ Credential, e.g. admin/admin, ip=192.168.100.22/24, gw=192.168.100.1  
 ![alt text](image-3.png)
 
 ### Start Next-VE and then Remove Cloudinit Drive
@@ -21,6 +21,7 @@
 + Remove CloudInit Drive. Otherwise, CLI access may fail in next bootup.
 
 ### Run setup script
++ Change admin password, e.g. Welcome123!
 ![alt text](image-4.png)
 
 + Check status, e.g. sudo kubectl get pods
@@ -35,7 +36,7 @@
 ### Supplementary Info.
 + https://community.f5.com/kb/technicalarticles/create-f5-big-ip-next-instance-on-proxmox-virtual-environment/326446
 
-BIG-IP-Next-20.2.0-2.375.1+0.0.43
-+ Ubuntu 22.04.4 TLS
-+ 
++ BIG-IP-Next-20.2.0-2.375.1+0.0.43
+  + Ubuntu 22.04.4 TLS  
+  + ![alt text](image-7.png)
 
