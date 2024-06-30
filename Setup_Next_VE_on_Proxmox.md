@@ -46,13 +46,11 @@
   ![alt text](image-10.png)
 
 ### 7. Supplementary Info.
++ admin account was disable after running setup
 + BIG-IP-Next-20.2.0-2.375.1+0.0.43
   + Ubuntu 22.04.4 TLS
   + K8S version  
     ![alt text](image-7.png)
-
-+ admin account was disable after running setup
-  
 + https://community.f5.com/kb/technicalarticles/create-f5-big-ip-next-instance-on-proxmox-virtual-environment/326446
 
 
