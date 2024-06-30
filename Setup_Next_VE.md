@@ -8,7 +8,7 @@
 
 ### Import ovf
 + ssh to proxmox
-  + e.g. ssh root@192.168.100.2 or ssh root@192.168.100.3
+  + e.g. ssh root@192.168.100.2
 + import ovf
   + e.g. qm importovf 222 /root/f5/images/BigIP-Next/VE-Next/BIG-IP-Next-20.2.0-2.375.1+0.0.43.ovf local-lvm
 
