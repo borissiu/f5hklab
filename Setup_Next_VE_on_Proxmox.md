@@ -33,8 +33,10 @@
   ![alt text](image-6.png)
 
 ### 5. Manage by Central Manager
-+ Connect to CM, e.g. https://192.168.100.210
++ Connect to CM
+  + e.g. https://192.168.100.210
 + Add Instance
+  + password = Welcome123!
   ![alt text](image-8.png)
 + Results  
   ![alt text](image-9.png)
