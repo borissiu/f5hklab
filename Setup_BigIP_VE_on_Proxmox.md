@@ -25,14 +25,14 @@
 
 ### 4. BigIP-VE initial setup
 + BigIP-VE initial setup via Proxmox console
-+ logon as root/default
-+ Disable mgmt-dhcp
-  + tmsh modify sys global-settings mgmt-dhcp disabled
-+ Configure mgmt-ip, gateway
-  + tmsh create sys management-ip 192.168.100.190/24
-  + tmsh create sys management-route default gateway 192.168.100.1
-+ Save config
-  + tmsh save sys config
+  + Logon as root/default
+  + Disable mgmt-dhcp
+    + tmsh modify sys global-settings mgmt-dhcp disabled
+  + Configure mgmt-ip, gateway
+    + tmsh create sys management-ip 192.168.100.190/24
+    + tmsh create sys management-route default gateway 192.168.100.1
+  + Save config
+    + tmsh save sys config
 
 ### 5. Supplementary Info.
 + How to deploy BIG-IP VE with Proxmox Virtual Environment
