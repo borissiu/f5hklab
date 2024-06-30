@@ -11,9 +11,9 @@
 + import ovf, e.g. qm importovf 222 /root/f5/images/BigIP-Next/VE-Next/BIG-IP-Next-20.2.0-2.375.1+0.0.43.ovf local-lvm
 
 ### Add Cloudinit & NICs
-+ Credential, e.g. admin/admin, 192.168.100.22
++ Credential, e.g. admin/admin, 192.168.100.22  
 ![alt text](image-3.png)
-+ E1000 for mgmt and Virtio for others
++ E1000 for mgmt and Virtio for others  
 ![alt text](image-5.png)
 
 ### Start Next-VE and then Remove Cloudinit
