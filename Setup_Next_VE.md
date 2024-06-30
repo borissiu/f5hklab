@@ -15,7 +15,7 @@
 ### Add NICs & Cloudinit Drive
 + Add NICs (E1000 for mgmt and Virtio for others)
 + Add Cloudinit Drive
-![alt text](image-5.png)
+  ![alt text](image-5.png)
 + Set Cloudinit info.
   + e.g. admin/admin, ip=192.168.100.22/24, gw=192.168.100.1  
   ![alt text](image-3.png)
@@ -32,12 +32,15 @@
   ![alt text](image-6.png)
 
 ### Manage by Central Manager
-+ Connect to CM, e.g. https://192.168.100.210  
++ Connect to CM, e.g. https://192.168.100.210
++ Add Instance
   ![alt text](image-8.png)
++ Results  
   ![alt text](image-9.png)
 
 ### Activate License
-![alt text](image-10.png)
++ Update the instance
+  ![alt text](image-10.png)
 
 ### Supplementary Info.
 + BIG-IP-Next-20.2.0-2.375.1+0.0.43
