@@ -36,7 +36,7 @@
 
 ### 4. Activate License
 + Update the instance
-  ![alt text](image-10.png)
+  ![alt text](image-22.png)
 
 ### 5. Supplementary Info.
 + Upgrade F5OS to 1.7.0
