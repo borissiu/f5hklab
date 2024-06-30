@@ -52,6 +52,7 @@
   + K8S version  
     ![alt text](image-7.png)
 + https://community.f5.com/kb/technicalarticles/create-f5-big-ip-next-instance-on-proxmox-virtual-environment/326446
-
++ Postman Collection  
+  https://clouddocs.f5.com/bigip-next/latest/_downloads/306e939fa3b8d36fdf0d8b7a9aaf6328/BIG-IP-Next-Postman-Collection-v20.2.0-4.15.61-0.0.3.zip
 
 
