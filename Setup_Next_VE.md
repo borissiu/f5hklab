@@ -7,14 +7,18 @@
 6. Activate License
 
 ### Import ovf
-+ ssh to proxmox, e.g. ssh root@192.168.100.2 or ssh root@192.168.100.3
-+ import ovf, e.g. qm importovf 222 /root/f5/images/BigIP-Next/VE-Next/BIG-IP-Next-20.2.0-2.375.1+0.0.43.ovf local-lvm
++ ssh to proxmox
+  + e.g. ssh root@192.168.100.2 or ssh root@192.168.100.3
++ import ovf
+  + e.g. qm importovf 222 /root/f5/images/BigIP-Next/VE-Next/BIG-IP-Next-20.2.0-2.375.1+0.0.43.ovf local-lvm
 
 ### Add NICs & Cloudinit Drive
-+ E1000 for mgmt and Virtio for others  
++ Add NICs (E1000 for mgmt and Virtio for others)
++ Add Cloudinit Drive
 ![alt text](image-5.png)
-+ Credential, e.g. admin/admin, ip=192.168.100.22/24, gw=192.168.100.1  
-![alt text](image-3.png)
++ Set Cloudinit info.
+  + e.g. admin/admin, ip=192.168.100.22/24, gw=192.168.100.1  
+  ![alt text](image-3.png)
 
 ### Start Next-VE and then Remove Cloudinit Drive
 + Start Next-VE
@@ -22,15 +26,15 @@
 
 ### Run setup script
 + Change admin password, e.g. Welcome123!
-![alt text](image-4.png)
+  ![alt text](image-4.png)
 
 + Check status, e.g. sudo kubectl get pods
-![alt text](image-6.png)
+  ![alt text](image-6.png)
 
 ### Manage by Central Manager
 + Connect to CM, e.g. https://192.168.100.210  
-![alt text](image-8.png)
-![alt text](image-9.png)
+  ![alt text](image-8.png)
+  ![alt text](image-9.png)
 
 ### Activate License
 ![alt text](image-10.png)
