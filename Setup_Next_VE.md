@@ -14,7 +14,7 @@
 
 ### Add NICs & Cloudinit Drive
 + Add NICs (E1000 for mgmt and Virtio for others)
-+ Add Cloudinit Drive
++ Add Cloudinit Drive  
   ![alt text](image-5.png)
 + Set Cloudinit info.
   + e.g. admin/admin, ip=192.168.100.22/24, gw=192.168.100.1  
