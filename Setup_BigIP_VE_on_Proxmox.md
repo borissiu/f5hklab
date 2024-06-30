@@ -15,7 +15,7 @@
   + e.g. qm importdisk 190 /root/f5/images/VE/BIGIP-17.1.1.3-0.0.5.qcow2 local-lvm
 
 ### 3. Adjust VM hardware setting
-+ Machine : pc-i440fx-**8.0** (8.2 may cause license activation failure)
++ Machine : pc-i440fx-**8.0** (8.2 may cause BigIP-VE license activation failure)
 + Add NICs
 + Detach and Remove default disk
 + Attach imported disk  
