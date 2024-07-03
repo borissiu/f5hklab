@@ -26,8 +26,8 @@
 + **Remove CloudInit Drive**. Otherwise, CLI access may fail in next bootup.
 
 ### 4. Run setup script
-+ Change admin password, e.g. Welcome123!
-+ Change hostname, e.g. Next-VE-22.f5hklab.com
++ **Change admin password**, e.g. Welcome123!
++ **Change hostname**, e.g. Next-VE-22.f5hklab.com
   ![alt text](image-4.png)
 
 + Check status, e.g. sudo kubectl get pods
