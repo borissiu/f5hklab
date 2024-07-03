@@ -10,4 +10,6 @@
   ![alt text](image-24.png)
 
 ### 2. Setup BigIP VE as usual
-+ 
++ Configure BigIP VE via GUI
+  + e.g. https://192.168.100.20
+
