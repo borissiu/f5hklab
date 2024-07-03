@@ -27,6 +27,7 @@
 
 ### 4. Run setup script
 + Change admin password, e.g. Welcome123!
++ Change hostname, e.g. Next-VE-22.f5hklab.com
   ![alt text](image-4.png)
 
 + Check status, e.g. sudo kubectl get pods
