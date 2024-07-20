@@ -22,8 +22,8 @@
 ### 3. CM full setup via GUI
 + Logon as admin/admin
 + Run CM Setup
-  + **Make sure both circles become GREEN before** 
   + ![alt text](image-32.png)
+  + **Make sure both circles become GREEN before** 
   + ![alt text](image-34.png)
   + ![alt text](image-33.png)
   + ![alt text](image-35.png)
@@ -36,4 +36,4 @@
 ### 4. Somehow App Migration by UCS failed
 + Migrate a BIG-IP user configuration set (UCS) to BIG-IP Next instances
   + ![alt text](image-39.png)
-+ ![alt text](image-40.png)
+  + ![alt text](image-40.png)
