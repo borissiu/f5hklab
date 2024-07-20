@@ -18,10 +18,10 @@
 
 ### 2. CM initial setup via Console
 + Logon as admin/admin
-  + ![alt text](image-29.png)
+  ![alt text](image-29.png)
 + Run setup script
-  + ![alt text](image-30.png)
-  + ![alt text](image-31.png)
+  ![alt text](image-30.png)
+  ![alt text](image-31.png)
 
 ### 3. CM full setup via GUI
 + Logon as admin/admin
@@ -82,4 +82,6 @@ f5admin@Ubuntu-209:/home$ sudo systemctl stop nfs-kernel-server.service
 f5admin@Ubuntu-209:/home$ sudo exportfs -a
 f5admin@Ubuntu-209:/home$ sudo systemctl start nfs-kernel-server.service
 ```
+
++ Still something wrong...
 ![alt text](image-41.png)
