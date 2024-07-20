@@ -6,10 +6,10 @@
 
 ### 1. Import OVF & NIC
 + Create VM ID 218
-'''
-qm importovf 218 BIG-IP-Next-CentralManager-20.2.1-0.3.25.ovf local-lvm
-qm set 218 -net0 virtio,bridge=vmbr0
-'''
+  ```
+  qm importovf 218 BIG-IP-Next-CentralManager-20.2.1-0.3.25.ovf local-lvm
+  qm set 218 -net0 virtio,bridge=vmbr0
+  ```
 + Start the VM by using default HW setting
 
 ### 2. CM initial setup via Console
