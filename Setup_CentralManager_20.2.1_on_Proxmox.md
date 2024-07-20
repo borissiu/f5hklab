@@ -2,7 +2,7 @@
 1. Import OVF & NIC
 2. Run CM setup script via Console
 3. CM full installation via GUI
-4. Somehow App Migration by UCS failed
+4. Somehow App Migration by using UCS failed
 
 ### 1. Import OVF & NIC
 + Create VM ID 218
@@ -11,6 +11,9 @@
   qm set 218 -net0 virtio,bridge=vmbr0
   ```
 + Start the VM by using default HW setting
+  + e.g. 16G memory, 8 vCPU
+  + Default machine type (i.e. i440fx, version 8.2)
+  + No Cloud-init drive, 
 
 ### 2. CM initial setup via Console
 + Logon as admin/admin
@@ -23,7 +26,7 @@
 + Logon as admin/admin
 + Run CM Setup
   + ![alt text](image-32.png)
-  + **Make sure both circles become GREEN before** 
++ **Make sure Storage circle become GREEN** 
   + ![alt text](image-34.png)
   + ![alt text](image-33.png)
   + ![alt text](image-35.png)
@@ -33,7 +36,8 @@
   + ![alt text](image-38.png)
 + Wait 10+ mins and then logon again 
 
-### 4. Somehow App Migration by UCS failed
+### 4. Somehow App Migration by using UCS failed
 + Migrate a BIG-IP user configuration set (UCS) to BIG-IP Next instances
   + ![alt text](image-39.png)
   + ![alt text](image-40.png)
++ No issue if using ESXi6.7.
