@@ -6,15 +6,33 @@
 5. Supplementary Info.
 
 ### 1. Import OVF & NIC
-+ Create VM ID 218
++ Create & Start a new VM, e.g. VM-ID 211
   ```
-  qm importovf 218 BIG-IP-Next-CentralManager-20.2.1-0.3.25.ovf local-lvm
-  qm set 218 --cores 16 --memory 32768 --net0 virtio,bridge=vmbr0
+  qm importovf 211 BIG-IP-Next-CentralManager-20.2.1-0.3.25.ovf local-lvm
+  qm set 211 --cores 16 --memory 32768 --net0 virtio,bridge=vmbr0
+  qm start 211
+  ### qm stop 211
+  ### qm destory 211
   ```
-+ Start the VM by using default HW setting
-  + e.g. 16G memory, 8 vCPU
-  + Default machine type (i.e. i440fx, version 8.2)
-  + No Cloud-init drive, 
+  ```
+  {
+      "created": "2024-07-23T03:32:45.554043094Z",
+      "status": "RUNNING",
+      "step": "Installing kafka...",
+      "updated": "2024-07-23T03:36:33Z"
+  }
+  ```
+
+
++ Do NOT support qcow format (Need qcow2) 
+  ```
+  qm importdisk 213 BIG-IP-Next-CentralManager-20.2.1-0.3.25.qcow local-lvm
+  qm set 213 --cores 16 --memory 32768 --net0 virtio,bridge=vmbr0
+  qm start 213
+  ```
++ Using default HW setting is fine
+  + e.g. 16G memory, 8 vCPU, Default machine type (i.e. i440fx, version 8.2)
+  + No need Cloud-init drive, 
 
 ### 2. CM initial setup via Console
 + Logon as admin/admin
@@ -46,6 +64,12 @@
 ### 5. Supplementary Info.
 + NFS Server
   ```
+  sudo apt install nfs-kernel-server
+  sudo mkdir /home/CentralManager
+  sudo chown +777 /home/CentralManager
+  ```
+  
+  ```
   f5admin@Ubuntu-209:/home$ more /etc/exports
   # /etc/exports: the access control list for filesystems which may be exported
   #		to NFS clients.  See exports(5).
@@ -62,6 +86,14 @@
   /home/CentralManager	*(rw,insecure,sync,no_subtree_check,no_root_squash)
   ```
 
++ no_root_squash for allowing chown
+  ```
+  f5admin@Ubuntu-209:/home$
+  f5admin@Ubuntu-209:/home$ sudo systemctl stop nfs-kernel-server.service
+  f5admin@Ubuntu-209:/home$ sudo exportfs -a
+  f5admin@Ubuntu-209:/home$ sudo systemctl start nfs-kernel-server.service
+  ```
+
 + Test NFS from MAC
   ```
   h.siu@J34JML4DVJ ~ % showmount -e 192.168.100.209
@@ -75,13 +107,22 @@
   "failed to configure storage: failed to configure storage, chown: changing ownership of '/mnt/external-storage/735ca9e3-2893-4f60-bb6e-d21fe1fa508e/cm-backup': Operation not permitted\n, exit status 1"
   ```
 
-+ no_root_squash for allowing chown
-  ```
-  f5admin@Ubuntu-209:/home$
-  f5admin@Ubuntu-209:/home$ sudo systemctl stop nfs-kernel-server.service
-  f5admin@Ubuntu-209:/home$ sudo exportfs -a
-  f5admin@Ubuntu-209:/home$ sudo systemctl start nfs-kernel-server.service
-  ```
-
 + Still something wrong...
   ![alt text](image-41.png)
+
+```
+sudo apt install nfs-common
+sudo mkdir /opt/CentralManager
+sudo mount 192.168.100.209:/home/CentralManager /opt/CentralManager
+```
+
+```
+An alternate way to mount an NFS share from another machine is to add a line to the /etc/fstab file. The line must state the hostname of the NFS server, the directory on the server being exported, and the directory on the local machine where the NFS share is to be mounted.
+
+The general syntax for the line in /etc/fstab file is as follows:
+
+example.hostname.com:/srv /opt/example nfs rsize=8192,wsize=8192,timeo=14,intr
+```
+
+
+![alt text](image-43.png)
