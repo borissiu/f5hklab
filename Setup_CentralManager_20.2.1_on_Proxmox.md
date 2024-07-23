@@ -1,6 +1,6 @@
 ### Setup Central Manager (20.2.1) on Proxmox
 1. Import OVF & NIC
-2. Run CM setup script via Console*** (Check pods status before running setup)***
+2. Run CM setup script via Console ***(Check pods status before running setup)***
 3. CM full installation via GUI
 4. ***Somehow App Migration by using UCS failed***
 5. Supplementary Info.
@@ -35,7 +35,7 @@
 + Check pods status before running setup
 ![alt text](image-44.png)
 
-### 2. CM initial setup via Console*** (Check pods status before running setup)***
+### 2. CM initial setup via Console ***(Check pods status before running setup)***
 + Logon as admin/admin
   ![alt text](image-29.png)
 + Run setup script
