@@ -14,6 +14,13 @@
   ### qm stop 211
   ### qm destory 211
   ```
++ Using default HW setting is fine
+  + e.g. 16G memory, 8 vCPU, Default machine type (i.e. i440fx, version 8.2)
+  + No need Cloud-init drive, 
++ Check pods status before running setup
+  + It takes 5 mins or more
+  ![alt text](image-44.png)
+
   ```
   {
       "created": "2024-07-23T03:32:45.554043094Z",
@@ -22,21 +29,12 @@
       "updated": "2024-07-23T03:36:33Z"
   }
   ```
-+ Do ***NOT*** support qcow format (Need qcow2) 
++ Proxmox do ***NOT*** support qcow format (Need qcow2) 
   ```
   qm importdisk 212 BIG-IP-Next-CentralManager-20.2.1-0.3.25.qcow local-lvm
   qm set 212 --cores 16 --memory 32768 --net0 virtio,bridge=vmbr0
   qm start 212
   ```
-+ Using default HW setting is fine
-  + e.g. 16G memory, 8 vCPU, Default machine type (i.e. i440fx, version 8.2)
-  + No need Cloud-init drive, 
-
-+ Check pods status before running setup
-  + It takes 5 mins or more
-  ![alt text](image-44.png)
-
-
 ![alt text](image-45.png)
 ### 2. CM initial setup via Console ***(Check pods status before running setup)***
 + Logon as admin/admin
