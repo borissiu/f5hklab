@@ -35,7 +35,6 @@
   qm set 212 --cores 16 --memory 32768 --net0 virtio,bridge=vmbr0
   qm start 212
   ```
-![alt text](image-45.png)
 ### 2. CM initial setup via Console ***(Check pods status before running setup)***
 + Logon as admin/admin
   ![alt text](image-29.png)
@@ -49,6 +48,8 @@
   ![alt text](image-32.png)
 + ***Make sure Select Node(s) for installation*** 
 + ***Make sure Storage circle become GREEN*** 
+  ![alt text](image-46.png)
+  
   ![alt text](image-34.png)
   ![alt text](image-33.png)
   ![alt text](image-35.png)
