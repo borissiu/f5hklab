@@ -8,9 +8,9 @@
 ### 1. Import OVF & NIC
 + Create & Start a new VM, e.g. VM-ID 211
   ```
-  qm importovf 220 BIG-IP-Next-CentralManager-20.2.1-0.3.25.ovf local-lvm
-  qm set 220 --cores 16 --memory 32768 --net0 virtio,bridge=vmbr0
-  qm start 220
+  qm importovf 211 BIG-IP-Next-CentralManager-20.2.1-0.3.25.ovf local-lvm
+  qm set 211 --cores 16 --memory 32768 --net0 virtio,bridge=vmbr0
+  qm start 211
   ### qm stop 211
   ### qm destory 211
   ```
@@ -22,19 +22,22 @@
       "updated": "2024-07-23T03:36:33Z"
   }
   ```
-+ Do NOT support qcow format (Need qcow2) 
++ Do ***NOT*** support qcow format (Need qcow2) 
   ```
-  qm importdisk 213 BIG-IP-Next-CentralManager-20.2.1-0.3.25.qcow local-lvm
-  qm set 213 --cores 16 --memory 32768 --net0 virtio,bridge=vmbr0
-  qm start 213
+  qm importdisk 212 BIG-IP-Next-CentralManager-20.2.1-0.3.25.qcow local-lvm
+  qm set 212 --cores 16 --memory 32768 --net0 virtio,bridge=vmbr0
+  qm start 212
   ```
 + Using default HW setting is fine
   + e.g. 16G memory, 8 vCPU, Default machine type (i.e. i440fx, version 8.2)
   + No need Cloud-init drive, 
 
 + Check pods status before running setup
-![alt text](image-44.png)
+  + It takes 5 mins or more
+  ![alt text](image-44.png)
 
+
+![alt text](image-45.png)
 ### 2. CM initial setup via Console ***(Check pods status before running setup)***
 + Logon as admin/admin
   ![alt text](image-29.png)
@@ -46,6 +49,7 @@
 + Logon as admin/admin
 + Run CM Setup
   ![alt text](image-32.png)
++ ***Make sure Select Node(s) for installation*** 
 + ***Make sure Storage circle become GREEN*** 
   ![alt text](image-34.png)
   ![alt text](image-33.png)
