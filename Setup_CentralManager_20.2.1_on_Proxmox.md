@@ -8,11 +8,11 @@
 ### 1. Import OVF & NIC
 + Create & Start a new VM, e.g. VM-ID 211
   ```
-  qm importovf 211 BIG-IP-Next-CentralManager-20.2.1-0.3.25.ovf local-lvm
-  qm set 211 --cores 16 --memory 32768 --net0 virtio,bridge=vmbr0
-  qm start 211
-  ### qm stop 211
-  ### qm destory 211
+  qm importovf 212 BIG-IP-Next-CentralManager-20.2.1-0.3.25.ovf local-lvm
+  qm set 212 --cores 16 --memory 32768 --net0 virtio,bridge=vmbr0
+  qm start 212
+  ### qm stop 212
+  ### qm destory 212
   ```
 + Using default HW setting is also fine
   + e.g. 16G memory, 8 vCPU, Default machine type (i.e. i440fx, version 8.2)
@@ -41,9 +41,11 @@
   + ***Make sure Select Node(s) for installation*** 
   + ***Make sure Storage setting become GREEN*** 
   ![alt text](image-46.png)
+  ![alt text](image-47.png)
 + It may show "Unable to load bootstrap info." but never mind
   ![alt text](image-38.png)
 + Wait 10+ mins and then logon again 
+
 
 ### 4. ***Somehow App Migration by using UCS failed***
 + Migrate a BIG-IP user configuration set (UCS) to BIG-IP Next instances
